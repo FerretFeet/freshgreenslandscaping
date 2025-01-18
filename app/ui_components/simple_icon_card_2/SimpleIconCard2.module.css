@@ -1,0 +1,45 @@
+.simpleIconCard {
+    padding: 1.5rem;
+    /* padding-top should == other padding + half of iconContainer height */
+    padding-top: calc(1.5rem + 40px);
+    
+    width: 288px;
+    height: fit-content;
+    color: white;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 16px;
+    position: relative;
+}
+
+
+.iconContainer {
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+    width: 80px;
+    /* height should be double simpleIconCard padding-top */
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconImg {
+    width: 100%;
+
+}
+
+.title {
+}
+
+.description {
+ text-align: center;
+ margin-top: 0;
+}
