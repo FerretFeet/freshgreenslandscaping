@@ -1,5 +1,5 @@
 .simpleIconCard {
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     width: 288px;
@@ -30,10 +30,12 @@
 }
 
 .title {
-    margin-top: 2rem;
-    margin-bottom: -0.25rem;
+    margin: 1.5rem;
+    text-align: center;
 }
 
 .description {
  text-align: center;
+ margin: 1.5rem;
+ margin-bottom: 2.5rem;
 }

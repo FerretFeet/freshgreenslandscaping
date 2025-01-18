@@ -1,6 +1,6 @@
 .simpleIconCard {
     padding: 1.5rem;
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     width: 288px;
@@ -15,7 +15,7 @@
     width: clamp(32px, 6rem, 96px);
     height: clamp(32px, 6rem, 96px);
     border-radius: 50%;
-    background-color: green;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
