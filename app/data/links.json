@@ -1,0 +1,7 @@
+
+{
+    "Contact Us": "/contact",
+    "Phone": "tel:+15015103469",
+    "Residential": "../app/routes/service.residential/route.tsx"
+
+}

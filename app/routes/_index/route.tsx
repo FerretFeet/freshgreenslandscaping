@@ -1,8 +1,9 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
-import SimpleIconCard from "~/ui_components/simple_icon_card/SimpleIconCard";
-import data from './../../public/valuePropositions.json';
-import SimpleImgCard from "~/ui_components/simple_img_card/SimpleImageCard";
-import SimpleIconCard2 from "~/ui_components/simple_icon_card_2/SimpleIconCard2";
+import SimpleIconCard from "~/ui_components/elements/simple_icon_card/SimpleIconCard";
+import data from '../../data/valuePropositions.json';
+import SimpleImgCard from "~/ui_components/elements/simple_img_card/SimpleImageCard";
+import SimpleIconCard2 from "~/ui_components/elements/simple_icon_card_2/SimpleIconCard2";
+import Header from "~/ui_components/sections/header/Header";
 
 
 export const meta: MetaFunction = () => {
@@ -15,6 +16,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+      <Header />
       <SimpleIconCard2 title={data[4].title} description={data[4].description} iconLink={data[4].iconLink} />
 
             <SimpleImgCard title={data[2].title} description={data[2].description} iconLink={data[2].iconLink} />
