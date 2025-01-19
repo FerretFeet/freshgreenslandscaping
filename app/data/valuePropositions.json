@@ -3,7 +3,7 @@
         "title": "Work Ethic",
         "description": "We work hard to get the job done right each and every time.",
         "iconLink": {
-            "imgLink": "./favicon.ico",
+            "imgLink": "../../public/imgs/icons/worker.png",
             "imgAltText": ""
         }
     },
@@ -11,7 +11,7 @@
         "title": "Satisfaction Guranteed",
         "description": "If you're not satisfied with our results, let us know and we'll come back out to make it right!",
         "iconLink": {
-            "imgLink": "./favicon.ico",
+            "imgLink": "../../public/imgs/icons/like.png",
             "imgAltText": ""
         }
     },
@@ -19,25 +19,8 @@
         "title": "Work Ethic",
         "description": "We work hard to get the job done right each and every time.",
         "iconLink": {
-            "imgLink": "./imgs/mower.jpeg",
-            "imgAltText": ""
-        }
-    },
-    {
-        "title": "Satisfaction Guranteed",
-        "description": "If you're not satisfied with our results, let us know and we'll come back out to make it right!",
-        "iconLink": {
-            "imgLink": "./imgs/leaves.png",
-            "imgAltText": ""
-        }
-    },
-    {
-        "title": "Sandra B.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. ",
-        "iconLink": {
-            "imgLink": "./favicon.ico",
+            "imgLink": "../../public/imgs/icons/home.png",
             "imgAltText": ""
         }
     }
-
 ]

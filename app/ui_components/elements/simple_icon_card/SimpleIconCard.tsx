@@ -1,6 +1,7 @@
 import ImgNText from "~/interfaces/ImgNText"
 import styles from "./SimpleIconCard.module.css"
 
+
 export default function SimpleIconCard({title, description, iconLink} : {title: string, description: string, iconLink: ImgNText}) {
     return (
         <div className={styles.simpleIconCard}>
