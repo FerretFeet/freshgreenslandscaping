@@ -5,6 +5,8 @@ node_modules
 /build
 /public/imgs
 /app/imgs
+/app/*.png
+/app/*.jpg
 .env
 
 # Local Netlify folder

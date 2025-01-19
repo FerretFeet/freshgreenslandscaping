@@ -1,0 +1,74 @@
+  .hideOverflow{
+    overflow: hidden;
+
+  }
+
+  .stylingContainer {
+    background-image: url(hedge_bush_green_nature.jpg);
+    height: fit-content;
+    /* width set to 110% to hide box-shadow on left&right. coupled with .hideOverflow */
+    width: 110%;
+    background-size: contain;
+    box-shadow: -16px 0 8px 8px var(--white) inset;
+
+
+  }
+  
+  .container {
+    height: fit-content;
+    display: block;
+    min-height: 10rem;
+    position: relative;
+    padding: 3rem;
+    width: fit-content;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: -16px 0 16px 32px var(--white);
+
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(map1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 30%;
+
+}
+
+  
+  .stateImg {
+    position: absolute;
+    left: 50%;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+
+  
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .serviceAreaItem {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .areaIcon {
+    width: clamp(30px, 2rem, 40px);
+    aspect-ratio: auto;
+  }
