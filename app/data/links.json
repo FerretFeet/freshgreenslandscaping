@@ -2,7 +2,7 @@
 {
     "Contact Us": "/contact",
     "Phone": "tel:+15015103469",
-    "Quote": "/quote",
+    "Get An Estimate": "/quote",
     "Residential": "../app/routes/service.residential/route.tsx"
 
 }
