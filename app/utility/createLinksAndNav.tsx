@@ -1,8 +1,8 @@
 import { Link } from "@remix-run/react";
-import { LinkString } from "~/interfaces/LinkString";
+import { DataString } from "~/interfaces/DataString";
 
-export default function createLinksAndNav(links: LinkString, excludedLinks: Array<string>) {
-    const testLinks: LinkString = links
+export default function createLinksAndNav(links: DataString, excludedLinks: Array<string>) {
+    const testLinks: DataString = links
     return (
         <nav className="createdLinks">
             <ul className="clList">

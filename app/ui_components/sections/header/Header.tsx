@@ -1,11 +1,10 @@
 import styles from './Header.module.css'
 import createLinksAndNav from '~/utility/createLinksAndNav'
 import { Link } from '@remix-run/react'
-import { LinkString } from '~/interfaces/LinkString'
+import { DataString } from '~/interfaces/DataString'
 
 
-export default function Header({quoteFormLink, contactLink, contactPhone, logoPath, navLinks, excludedNavLinkKeys} : {quoteFormLink: LinkString, contactLink: LinkString, contactPhone: LinkString, logoPath: string, navLinks: LinkString, excludedNavLinkKeys: Array<string>}) {
-// NOTE:: CONTAINS HARD PATH TO LOGO PICTURE
+export default function Header({quoteFormLink, contactLink, contactPhone, logoPath, navLinks, excludedNavLinkKeys} : {quoteFormLink: DataString, contactLink: DataString, contactPhone: DataString, logoPath: string, navLinks: DataString, excludedNavLinkKeys: Array<string>}) {
 
     const trimPhoneLink = (phoneLink: string) => {
     // Assume given tel:+{11-Digit-Number} && First digit not needed
@@ -15,11 +14,12 @@ export default function Header({quoteFormLink, contactLink, contactPhone, logoPa
     const areaCode = slicedPhone.slice(0,3);
     const prefix = slicedPhone.slice(3,6);
     const lineNumber = slicedPhone.slice(6);
+    
     return `${areaCode}-${prefix}-${lineNumber}`
     
 }
 return (
-    <div className={styles.container}>
+    <section className={styles.container}>
         <div className={styles.contactBanner}>
             <Link to={Object.values(quoteFormLink)[1]}>
                 <button type="button" className={styles.quoteBtn}>{Object.values(quoteFormLink)[0]}</button>
@@ -31,6 +31,6 @@ return (
             <img src={logoPath} alt="logo" className={styles.logo} />
             {createLinksAndNav(navLinks, excludedNavLinkKeys)}
         </div>
-    </div>
+    </section>
 )
 }

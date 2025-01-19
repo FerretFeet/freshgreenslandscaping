@@ -5,7 +5,7 @@ import SimpleImgCard from "~/ui_components/elements/simple_img_card/SimpleImageC
 import SimpleIconCard2 from "~/ui_components/elements/simple_icon_card_2/SimpleIconCard2";
 import Header from "~/ui_components/sections/header/Header";
 import links from "~/data/links.json"
-import { LinkString } from "~/interfaces/LinkString";
+import { DataString } from "~/interfaces/DataString";
 
 
 export const meta: MetaFunction = () => {
@@ -16,9 +16,9 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const quoteFormLink: LinkString = {key: "Get An Estimate", value: links["Get An Estimate"]};
-  const contactLink: LinkString = {key: "Contact Us", value: links["Contact Us"]};
-  const contactPhone: LinkString = {key: "Phone", value: links.Phone}
+  const quoteFormLink: DataString = {key: "Get An Estimate", value: links["Get An Estimate"]};
+  const contactLink: DataString = {key: "Contact Us", value: links["Contact Us"]};
+  const contactPhone: DataString = {key: "Phone", value: links.Phone}
 
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
