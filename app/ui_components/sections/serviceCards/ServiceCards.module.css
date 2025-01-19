@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 5rem;
-    background-color: var(--white);
+    /* background-color: var(--white); */
     width: 80%;
     margin: auto;
 }
@@ -18,3 +18,19 @@
     text-align: center;
     margin-top: 10rem;
 }
+
+/* .sectionContainer {
+    box-shadow: 0 0 64px 100px var(--primary-color) inset;
+    position: relative;
+
+
+}
+
+.sectionContainer::after {
+    box-shadow: 0 0 32px 32px var(--primary-color);
+    position: absolute;
+    content: '';
+    height: 100%;
+    top: 0;
+    width: 100%;
+} */
