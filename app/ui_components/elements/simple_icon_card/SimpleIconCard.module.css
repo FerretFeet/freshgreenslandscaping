@@ -8,7 +8,6 @@
     min-height: calc(288px*1.5);
     max-height: calc(352px*1.5);
     height: fit-content;
-    justify-content:space-around;
     align-items: center;
     margin: 2rem;
     border-radius: 16px;
@@ -22,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 
@@ -33,8 +33,8 @@
 }
 
 .title {
-    margin-top: 2rem;
-    margin-bottom: -0.25rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     color: var(--tertiary-color);
     font-size: 2rem;
 }
