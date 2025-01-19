@@ -8,6 +8,12 @@
 --black: #0A0A0A;
 }
 
+strong{
+  font-weight:bold;
+ }
+
+ em {font-style: italic;}
+
 /* Reset default browser styles */
 * {
     margin: 0;
@@ -75,6 +81,10 @@
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
   
   /* Remove default browser styles from forms */
