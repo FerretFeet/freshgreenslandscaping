@@ -2,6 +2,7 @@ import styles from './Header.module.css'
 import createLinksAndNav from '~/utility/createLinksAndNav'
 import { Link } from '@remix-run/react'
 import { DataString } from '~/interfaces/DataString'
+import LinkButton from '~/ui_components/elements/link_button/LinkButton'
 
 
 export default function Header({quoteFormLink, contactLink, contactPhone, logoPath, navLinks, excludedNavLinkKeys} : {quoteFormLink: DataString, contactLink: DataString, contactPhone: DataString, logoPath: string, navLinks: DataString, excludedNavLinkKeys: Array<string>}) {
@@ -21,9 +22,10 @@ export default function Header({quoteFormLink, contactLink, contactPhone, logoPa
 return (
     <section className={styles.container}>
         <div className={styles.contactBanner}>
-            <Link to={Object.values(quoteFormLink)[1]}>
+            <LinkButton link={Object.values(quoteFormLink)[1]} text={Object.values(quoteFormLink)[0]}/>
+            {/* <Link to={Object.values(quoteFormLink)[1]}>
                 <button type="button" className={styles.quoteBtn}>{Object.values(quoteFormLink)[0]}</button>
-            </Link>
+            </Link> */}
             <Link to={Object.values(contactLink)[1]} className={styles.contactLink}>{Object.values(contactLink)[0]}</Link>
             <a href={Object.values(contactPhone)[1]}>{trimPhoneLink(Object.values(contactPhone)[1])}</a>
         </div>

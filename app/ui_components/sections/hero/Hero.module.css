@@ -1,0 +1,52 @@
+.container {
+    background-color: var(--tertiary-color);
+    color: var(--white);
+    padding: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > * {
+    margin: 5rem;
+}
+
+.tagLine {
+    font-weight: bold;
+}
+
+.styleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+}
+
+.description {
+    font-size: 2rem;
+}
+
+.ctaModule {
+    min-height: fit-content;
+    min-width: fit-content;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .styleContainer {
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .description {
+        order:3;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .styleContainer {
+    width: 70%;
+    }
+}

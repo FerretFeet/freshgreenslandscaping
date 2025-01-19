@@ -17,11 +17,7 @@
 }
 
 .quoteBtn {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 16px;
-    background-color: var(--secondary-color);
-    color: var(--white);
-    font-weight: bold;
+
 }
 
 .contactLink {
