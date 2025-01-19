@@ -7,6 +7,8 @@ import LinkButton from "~/ui_components/elements/link_button/LinkButton";
 import heroTxt from "~/data/homeHeroTxt.json";
 import ValueProps from "~/ui_components/sections/valueProps/ValueProps";
 import valuePropData from "~/data/valuePropositions.json"
+import ServiceArea from "~/ui_components/sections/serviceArea/ServiceArea";
+import serviceAreas from "~/data/serviceAreas.json"
 
 
 export const meta: MetaFunction = () => {
@@ -20,6 +22,7 @@ export default function Index() {
   const quoteFormLink: DataString = {key: "Get An Estimate", value: links["Get An Estimate"]};
   const contactLink: DataString = {key: "Contact Us", value: links["Contact Us"]};
   const contactPhone: DataString = {key: "Phone", value: links.Phone}
+
 
   const MyCTAModule = () => (
     // Used in Hero
@@ -35,6 +38,7 @@ export default function Index() {
         navLinks={links} excludedNavLinkKeys={["Get An Estimate", "Contact Us", "Phone"]}/>
         <Hero h1text={heroTxt.h1text} description={heroTxt.description} CTAModule={MyCTAModule}/>
         <ValueProps cardInfoArr={valuePropData}/>
+        <ServiceArea stateImg={{imgLink: '../../../public/imgs/icons/map1.png', imgAltText: 'The State of Arkansas'}} serviceAreas={serviceAreas}/>
     </div>
   );
 }
