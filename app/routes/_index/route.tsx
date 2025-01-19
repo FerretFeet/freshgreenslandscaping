@@ -9,6 +9,8 @@ import ValueProps from "~/ui_components/sections/valueProps/ValueProps";
 import valuePropData from "~/data/valuePropositions.json"
 import ServiceArea from "~/ui_components/sections/serviceArea/ServiceArea";
 import serviceAreas from "~/data/serviceAreas.json"
+import ServiceCards from "~/ui_components/sections/serviceCards/ServiceCards";
+import serviceCardData from "~/data/serviceCards.json"
 
 
 export const meta: MetaFunction = () => {
@@ -39,6 +41,7 @@ export default function Index() {
         <Hero h1text={heroTxt.h1text} description={heroTxt.description} CTAModule={MyCTAModule}/>
         <ValueProps cardInfoArr={valuePropData}/>
         <ServiceArea stateImg={{imgLink: '../../../public/imgs/icons/map1.png', imgAltText: 'The State of Arkansas'}} serviceAreas={serviceAreas}/>
+        <ServiceCards cardInfoArr={serviceCardData} />
     </div>
   );
 }
