@@ -1,6 +1,8 @@
 # TODO
 
 - header animation on button hover
+- header nav burger menu
+- hero background img
 
 
 

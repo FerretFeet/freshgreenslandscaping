@@ -1,8 +1,4 @@
 import type { MetaFunction } from "@netlify/remix-runtime";
-import SimpleIconCard from "~/ui_components/elements/simple_icon_card/SimpleIconCard";
-import data from '../../data/valuePropositions.json';
-import SimpleImgCard from "~/ui_components/elements/simple_img_card/SimpleImageCard";
-import SimpleIconCard2 from "~/ui_components/elements/simple_icon_card_2/SimpleIconCard2";
 import Header from "~/ui_components/sections/header/Header";
 import links from "~/data/links.json"
 import { DataString } from "~/interfaces/DataString";
