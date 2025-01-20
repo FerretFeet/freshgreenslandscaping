@@ -13,6 +13,7 @@ import ServiceCards from "~/ui_components/sections/serviceCards/ServiceCards";
 import serviceCardData from "~/data/serviceCards.json"
 import SimpleIHP from "~/ui_components/sections/simpleIHP/SimpleIHP";
 import aboutUsTxt from "~/data/aboutUsTxt.json"
+import FormConstructor from "~/ui_components/base/formConstructor.tsx/FormConstructor";
 
 export const meta: MetaFunction = () => {
   return [
@@ -44,6 +45,7 @@ export default function Index() {
         <ServiceArea stateImg={{imgLink: '../../../public/imgs/icons/map1.png', imgAltText: 'The State of Arkansas'}} serviceAreas={serviceAreas}/>
         <ServiceCards cardInfoArr={serviceCardData} />
         <SimpleIHP imgLink={{imgLink: '/', imgAltText: 'a photo'}} sectionTitle= 'About Us' pText={aboutUsTxt.paragraphText} />
+        <FormConstructor />
     </div>
   );
 }

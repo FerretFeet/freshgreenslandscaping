@@ -3,7 +3,7 @@
 - header animation on button hover
 - header nav burger menu
 - hero background img
-- see if dangerouslySetInnerHtml in Hero.tsx needs to be addressed more ie sanitizing
+- see if dangerouslySetInnerHtml in Hero.tsx and simpleIHP.tsx needs to be addressed more ie sanitizing
 - background img for featured services section
 
 
