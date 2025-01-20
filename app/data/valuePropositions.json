@@ -3,7 +3,7 @@
         "title": "Work Ethic",
         "description": "We work hard to get the job done right each and every time.",
         "iconLink": {
-            "imgLink": "../../public/imgs/icons/worker.png",
+            "imgLink": "/imgs/icons/worker.png",
             "imgAltText": ""
         }
     },
@@ -11,7 +11,7 @@
         "title": "Satisfaction Guranteed",
         "description": "If you're not satisfied with our results, let us know and we'll come back out to make it right!",
         "iconLink": {
-            "imgLink": "../../public/imgs/icons/like.png",
+            "imgLink": "/imgs/icons/like.png",
             "imgAltText": ""
         }
     },
@@ -19,7 +19,7 @@
         "title": "Personalized Care",
         "description": "Your yard isn’t just another yard to us.  We offer personalized lawn care services for each customer so you get only the services you need.",
         "iconLink": {
-            "imgLink": "../../public/imgs/icons/home.png",
+            "imgLink": "/imgs/icons/home.png",
             "imgAltText": ""
         }
     }

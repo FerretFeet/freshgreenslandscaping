@@ -1,5 +1,9 @@
-.container {
+.bgColor {
     background-color: var(--tertiary-color);
+
+}
+
+.container {
     color: var(--white);
     padding-bottom: 2rem;
     padding-top: 1rem;
@@ -7,7 +11,27 @@
     padding-right: 10%;
     display: flex;
     flex-direction: column;
+    position: relative;
+
 }
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10%;
+    height: 100%;
+    width: 800px;
+    background-image: url(./1-1.webp);
+    /* REPLACE THIS WITH PANORAMA TYPE IMG */
+    background-repeat: no-repeat;
+    opacity: 30%;
+    z-index: 3;
+    box-shadow: 0 0 8px 8px var(--tertiary-color) inset;
+    background-size: cover;
+}
+
+
 
 .container > * {
     margin: 2rem;
@@ -15,6 +39,7 @@
 
 .tagLine {
     font-weight: bold;
+    z-index: 5;
 }
 
 .styleContainer {
@@ -28,6 +53,7 @@
 
 .description {
     font-size: 2rem;
+    z-index: 5;
 }
 
 .ctaModule {

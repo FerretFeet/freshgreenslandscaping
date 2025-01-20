@@ -6,6 +6,14 @@
 --tertiary-color: #1D74AA;
 --white: #FEF7F7;
 --black: #0A0A0A;
+--trans-black: #0A0A0AB0
+background-color: var(--white);
+
+}
+
+.tintBg {
+  background-color: #0A0A0AB0;
+  background-blend-mode: multiply;
 }
 
 strong{

@@ -15,7 +15,7 @@
 }
 
 .simpleIconCard::after {
-    box-shadow: 0 0 8px 4px var(--white) inset;
+    box-shadow: 0 0 8px 4px var(--black) inset;
     content: '';
     display: block;
     height: 100%;

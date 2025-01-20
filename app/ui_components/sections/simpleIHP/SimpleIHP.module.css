@@ -1,5 +1,5 @@
 .sectionContainer {
-    background-image: linear-gradient(var(--white) 0%, var(--primary-color) 10%);
+    background-image: linear-gradient(var(--black) 0%, var(--primary-color) 10%);
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -8,11 +8,14 @@ export default function ServiceArea({stateImg, serviceAreas}: {stateImg: ImgNTex
             <div className={styles.stylingContainer}>
                 <section className={styles.container}>
                     {/* <img src={stateImg.imgLink} alt={stateImg.imgAltText} className={styles.stateImg} /> */}
-                    <h2 className={styles.title}>Service Areas</h2>
+                    <div className={styles.titleStyler}>
+                        <h2 className={styles.title}>Service Areas</h2> 
+                    </div>
+                   
                     <ul className={styles.list}>
                         {serviceAreas.map((area, idx) => (
                             <li className={styles.serviceAreaItem} key={idx}>
-                                <img src="../../../../public/imgs/icons/mapPin.png" alt="" className={styles.areaIcon} />
+                                <img src="/imgs/icons/mapPin.png" alt="" className={styles.areaIcon} />
                                 <span>{area}</span>
                             </li>
                         ))}
