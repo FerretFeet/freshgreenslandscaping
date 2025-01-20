@@ -1,9 +1,24 @@
 .sectionContainer {
     background-image: url(./maxresdefault.jpg);
+    /* Need Tall panorama */
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    
+  }
+  
+   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+   @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } 
+  
 
 .container {
     display: flex;

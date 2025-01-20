@@ -4,6 +4,7 @@
 
   .stylingContainer {
     background-image: url(hedge_bush_green_nature.jpg);
+    background-position: center;
     height: fit-content;
     /* width set to 110% to hide box-shadow on left&right. coupled with .hideOverflow */
     width: 110%;
@@ -58,7 +59,6 @@
     background-color: var(--white);
     box-shadow: 0 0 8px 8px var(--white);
     z-index: 1;
-    padding: 0.5rem;
   }
   
   .titleStyler {

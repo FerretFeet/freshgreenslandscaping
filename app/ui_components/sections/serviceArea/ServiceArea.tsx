@@ -5,7 +5,7 @@ import styles from "./ServiceArea.module.css"
 export default function ServiceArea({stateImg, serviceAreas}: {stateImg: ImgNText, serviceAreas: Array<string>}) {
     return (
         <div className={styles.hideOverflow}>
-            <div className={styles.stylingContainer}>
+            <div className={`${styles.stylingContainer}`}>
                 <section className={styles.container}>
                     {/* <img src={stateImg.imgLink} alt={stateImg.imgAltText} className={styles.stateImg} /> */}
                     <div className={styles.titleStyler}>

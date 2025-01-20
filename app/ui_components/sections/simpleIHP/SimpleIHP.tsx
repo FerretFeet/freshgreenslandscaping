@@ -6,7 +6,7 @@ import styles from "./SimpleIHP.module.css"
 
 export default function SimpleIHP({imgLink, sectionTitle, pText}: {imgLink: ImgNText, sectionTitle: string, pText: string}) {
     return (
-        <section className={styles.sectionContainer}>
+        <section className={`${styles.sectionContainer} ${styles.parallax} tintBg`}>
             <div className={styles.imgContainer}>
                 <img src={imgLink.imgLink} alt={imgLink.imgAltText} className={styles.sectionImg} />
             </div>

@@ -17,7 +17,7 @@ export default function ServiceCards({cardInfoArr}: {cardInfoArr: Array<cardInfo
     }
 
     return (
-        <div className={`${styles.sectionContainer} tintBg`}>
+        <div className={`${styles.sectionContainer} tintBg ${styles.parallax}`}>
             <h2 className={styles.title}>Featured Services</h2>
             <div className={styles.container}>
 
