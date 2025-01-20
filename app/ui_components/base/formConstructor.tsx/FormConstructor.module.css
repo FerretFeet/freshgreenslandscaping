@@ -1,12 +1,23 @@
 .mainCont {
-    min-width: fit-content;
+    width: fit-content;
     padding: 2rem;
-    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    border: 8px solid var(--primary-color);
+    border-radius: 8px;
+    background-image: url(./grassclippings.png);
+    background-size: contain;
+    /* color: var(--white); */
 }
 
 .formTitleTxt {
     text-align: center;
     font-weight: bold;
+    width: fit-content;
+    justify-self: center;
 }
 
 .formContainer {
@@ -16,6 +27,8 @@
     justify-items: center;
     /* flex-wrap: wrap; */
     /* flex-direction: column; */
+    width: fit-content;
+    margin: 5rem;
     gap: 2.5rem;
 }
 
@@ -26,7 +39,7 @@ CLASS NOT APPEARING IN HTML?
 } */
 
 .legendStyler {
-    
+
 }
 
 .checkLabelCont > * {
@@ -59,8 +72,7 @@ CLASS NOT APPEARING IN HTML?
 @media screen and (min-width: 100rem) {
     .formContainer {
         grid-template-columns: 1fr 1fr;
-        /* justify-content: space-around; */
-        margin: auto;
+        justify-self: center;
         width: fit-content;
         column-gap: 10rem;
         row-gap: 5rem;
