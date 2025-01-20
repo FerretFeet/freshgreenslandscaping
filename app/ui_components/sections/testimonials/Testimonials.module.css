@@ -2,7 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 5rem;
     background-image: linear-gradient(var(--tertiary-color), 30%, var(--white) 80%);
+    height: 35rem;
+}
+
+.container > * {
+    /* container height - 2xpadding */
+    height: calc(35rem - 10rem);
 }
