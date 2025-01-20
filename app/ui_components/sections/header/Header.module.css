@@ -1,6 +1,8 @@
 .container {
     background-image: linear-gradient(var(--black), 1%, var(--primary-color), 70%, var(--tertiary-color) 85%);
     padding: 1.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
     color: var(--white);
 
 }

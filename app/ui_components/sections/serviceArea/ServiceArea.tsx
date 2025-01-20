@@ -13,7 +13,7 @@ export default function ServiceArea({stateImg, serviceAreas}: {stateImg: ImgNTex
                         {serviceAreas.map((area, idx) => (
                             <li className={styles.serviceAreaItem} key={idx}>
                                 <img src="../../../../public/imgs/icons/mapPin.png" alt="" className={styles.areaIcon} />
-                                {area}
+                                <span>{area}</span>
                             </li>
                         ))}
                     </ul>

@@ -1,8 +1,10 @@
 .container {
     background-color: var(--tertiary-color);
     color: var(--white);
-    padding: 2rem;
+    padding-bottom: 2rem;
     padding-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
 }

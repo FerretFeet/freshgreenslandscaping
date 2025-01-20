@@ -2,8 +2,6 @@
     min-width: fit-content;
     padding: 2rem;
     margin: auto;
-    /* border: 2px solid var(--primary-color); */
-    box-shadow: 0 0 4px 4px var(--primary-color);
 }
 
 .formTitleTxt {
