@@ -17,7 +17,7 @@
   .container {
     height: fit-content;
     display: block;
-    min-height: 10rem;
+    /* min-height: 10rem; */
     position: relative;
     padding: 3rem;
     width: fit-content;

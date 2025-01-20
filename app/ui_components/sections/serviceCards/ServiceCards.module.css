@@ -29,9 +29,9 @@
     margin: auto;
 }
 
-.container > * {
-    /* background-color: var(--tertiary-color); */
-}
+/* .container > * {
+    background-color: var(--tertiary-color);
+} */
 
 .title {
     color: var(--secondary-color);

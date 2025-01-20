@@ -10,6 +10,7 @@
     border-radius: 8px;
     background-image: url(./grassclippings.png);
     background-size: contain;
+    background-repeat: repeat;
     /* color: var(--white); */
 }
 
@@ -38,14 +39,19 @@
 CLASS NOT APPEARING IN HTML?
 } */
 
-.legendStyler {
+/* .legendStyler {
 
+} */
+
+.checkLabelCont {
+    background-color: var(--white);
 }
 
 .checkLabelCont > * {
     font-size: 1.18rem;
     padding: 2rem;
     margin-bottom: 1.5rem;
+
 }
 
 .createdLabelInputCont {
@@ -55,7 +61,7 @@ CLASS NOT APPEARING IN HTML?
     width: clamp(15rem, 15%, 60rem);
 }
 
-.createdLabelInputCont > input {
+.createdLabelInputCont > input, .createdLabelInputCont > textarea {
     border: 1px solid var(--black);
     border-radius: 16px;
     padding: 0.5rem;
@@ -79,4 +85,10 @@ CLASS NOT APPEARING IN HTML?
 
     }
     
+}
+
+.createdLabelInputCont > textarea {
+    width: 30rem;
+    height: 5rem;
+    resize: none;
 }

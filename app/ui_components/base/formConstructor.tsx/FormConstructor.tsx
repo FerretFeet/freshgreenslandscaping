@@ -161,6 +161,20 @@ export default function FormConstructor() {
 
   
     function createLabelInput({formField, labelText, inputType, placeHolder, value, changeHandler, required}: LabelInput) { 
+        if (inputType == "textarea") {
+            return (
+                <div className={styles.createdLabelInputCont}>
+                <label htmlFor={formField}>{labelText}</label>
+                <textarea
+                    name={formField}
+                    placeholder={placeHolder}
+                    value={value}
+                    onChange={changeHandler}
+                    required={required}
+                />
+            </div>
+            )
+        }
         return (
             <div className={styles.createdLabelInputCont}>
                 <label htmlFor={formField}>{labelText}</label>
