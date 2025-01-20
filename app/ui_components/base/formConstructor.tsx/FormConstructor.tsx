@@ -2,6 +2,7 @@
 import { ActionFunctionArgs, redirect } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { ChangeEventHandler, useState } from "react"
+import styles from "./FormConstructor.module.css"
 
 
 export interface LabelInput {
@@ -161,7 +162,7 @@ export default function FormConstructor() {
   
     function createLabelInput({formField, labelText, inputType, placeHolder, value, changeHandler, required}: LabelInput) { 
         return (
-            <div className="createdLabelInputCont">
+            <div className={styles.createdLabelInputCont}>
                 <label htmlFor={formField}>{labelText}</label>
                 <input type={inputType}
                     name={formField}
@@ -178,11 +179,13 @@ export default function FormConstructor() {
 
     function createCheckboxLabelInput({legendText, formField, selectOptionsArr, changeHandler}: CheckboxInput) {
         return (
-            <div className="createdCheckboxCont">
+            <div className={styles.createdCheckboxCont}>
+                <div className={styles.legendStyler}>
                 <legend>{legendText}</legend>
+                    </div>
                 {selectOptionsArr.map((val, idx) => {
                     return (
-                        <div className="checkLabelCont" key={idx}>
+                        <div className={styles.checkLabelCont} key={idx}>
                             <input
                             type="checkbox"
                             name={formField}
@@ -201,14 +204,17 @@ export default function FormConstructor() {
 
 
     return (
-        <Form >
-            {createLabelInput(formTextFields[0])}
-            {createLabelInput(formTextFields[1])}
-            {createLabelInput(formTextFields[2])}
-            {createLabelInput(formTextFields[3])}
-            {createLabelInput(formTextFields[4])}
-            {createCheckboxLabelInput(formCheckboxFields[0])}
-            {createLabelInput(formTextFields[5])}
-        </Form>
+        <div className={styles.mainCont}>
+            <h4 className={styles.formTitleTxt}>Get A Free Estimate</h4>
+            <Form className={styles.formContainer}>
+                {createLabelInput(formTextFields[0])}
+                {createLabelInput(formTextFields[1])}
+                {createLabelInput(formTextFields[2])}
+                {createLabelInput(formTextFields[3])}
+                {createLabelInput(formTextFields[4])}
+                {createCheckboxLabelInput(formCheckboxFields[0])}
+                {createLabelInput(formTextFields[5])}
+            </Form>
+        </div>
     )
 }

@@ -1,0 +1,71 @@
+.mainCont {
+    min-width: fit-content;
+    padding: 2rem;
+    margin: auto;
+    /* border: 2px solid var(--primary-color); */
+    box-shadow: 0 0 4px 4px var(--primary-color);
+}
+
+.formTitleTxt {
+    text-align: center;
+    font-weight: bold;
+}
+
+.formContainer {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    gap: 2.5rem;
+}
+
+
+
+/* .createdCheckBoxCont {
+CLASS NOT APPEARING IN HTML?
+} */
+
+.legendStyler {
+}
+
+.checkLabelCont > * {
+    font-size: 1.18rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.createdLabelInputCont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: clamp(15rem, 15%, 60rem);
+}
+
+.createdLabelInputCont > input {
+    border: 1px solid var(--black);
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+.legendStyler, .createdLabelInputCont > label {
+    font-size: 1.25rem;
+    margin-left: -1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+@media screen and (min-width: 100rem) {
+    .formContainer {
+        grid-template-columns: 1fr 1fr;
+        /* justify-content: space-around; */
+        margin: auto;
+        width: fit-content;
+        column-gap: 10rem;
+        row-gap: 5rem;
+
+    }
+    
+}
