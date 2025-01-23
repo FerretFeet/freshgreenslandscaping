@@ -227,7 +227,7 @@ export default function FormConstructor() {
             <form 
             name="estimate-form"
             method="POST"
-            // data-netlify='true'
+            data-netlify='true'
 
             // action="/"
             className={styles.formContainer}>
