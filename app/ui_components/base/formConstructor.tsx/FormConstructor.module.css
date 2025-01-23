@@ -71,7 +71,10 @@ CLASS NOT APPEARING IN HTML?
 .legendStyler, .createdLabelInputCont > label {
     font-size: 1.25rem;
     margin-left: -1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    background-color: var(--white);
+    width: fit-content;
+    padding: 0.5rem;
 
 }
 
@@ -81,7 +84,7 @@ CLASS NOT APPEARING IN HTML?
         justify-self: center;
         width: fit-content;
         column-gap: 10rem;
-        row-gap: 5rem;
+        row-gap: 2.5rem;
 
     }
     

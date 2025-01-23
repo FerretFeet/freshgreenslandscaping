@@ -13,7 +13,7 @@ import ServiceCards from "~/ui_components/sections/serviceCards/ServiceCards";
 import serviceCardData from "~/data/serviceCards.json"
 import SimpleIHP from "~/ui_components/sections/simpleIHP/SimpleIHP";
 import aboutUsTxt from "~/data/aboutUsTxt.json"
-import FormConstructor from "~/ui_components/base/formConstructor.tsx/FormConstructor";
+import FormConstructor, { formAction } from "~/ui_components/base/formConstructor.tsx/FormConstructor";
 import Testimonials from "~/ui_components/sections/testimonials/Testimonials";
 
 export const meta: MetaFunction = () => {
@@ -22,6 +22,8 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+export const action = formAction
 
 export default function Index() {
   const quoteFormLink: DataString = {key: "Get An Estimate", value: links["Get An Estimate"]};

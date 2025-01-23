@@ -6,6 +6,11 @@
 - see if dangerouslySetInnerHtml in Hero.tsx and simpleIHP.tsx needs to be addressed more ie sanitizing
 - background img for featured services section
 
+- form action
+- footer
+- other pages
+
+
 
 
 

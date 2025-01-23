@@ -35,7 +35,7 @@ interface FormState {
     message: string;
   }
 
-const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:3000"
+const baseUrl = process.env.NETLIFY_SITE_URL || "https://localhost:5173"
 
 
 export async function formAction({ request }: ActionFunctionArgs) {
@@ -46,22 +46,25 @@ export async function formAction({ request }: ActionFunctionArgs) {
     // REQUIRES WORK
     const formData = await request.formData();
     console.log(baseUrl);
-    const response = await fetch(`${baseUrl}/contactForm`, {
+    const response = await fetch(`${baseUrl}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: new URLSearchParams({
-        "form-name": "contactForm v1",
-        name: String(formData.get("name")),
+        "form-name": "estimateForm v1",
+        fname: String(formData.get("fname")),
+        lname: String(formData.get("lname")),
         phone: String(formData.get("phone")),
         email: String(formData.get("email")),
-        subject: String(formData.get("subject")),
-        message: String(formData.get("message")),
+        address: String(formData.get("address")),
+
+        subject: String(formData.get("services")),
+        additionalNotes: String(formData.get("additionalNotes")),
       }).toString(),
     });
     console.log(response);
-    return redirect("/contact-us");
+    return redirect("/");
   }
 
 // Allows for easier creation of form inputs
@@ -152,6 +155,7 @@ export default function FormConstructor() {
 
     function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>) {
         const { name, value }: {name:string, value:string} = event.target
+        console.log(value)
         setState((prevState) => ({
           ...prevState,
           [name]: value,
@@ -220,7 +224,13 @@ export default function FormConstructor() {
     return (
         <div className={styles.mainCont}>
             <h4 className={styles.formTitleTxt}>Get A Free Estimate</h4>
-            <Form className={styles.formContainer}>
+            <form 
+            name="estimate-form"
+            method="POST"
+            // data-netlify='true'
+
+            // action="/"
+            className={styles.formContainer}>
                 {createLabelInput(formTextFields[0])}
                 {createLabelInput(formTextFields[1])}
                 {createLabelInput(formTextFields[2])}
@@ -228,7 +238,8 @@ export default function FormConstructor() {
                 {createLabelInput(formTextFields[4])}
                 {createCheckboxLabelInput(formCheckboxFields[0])}
                 {createLabelInput(formTextFields[5])}
-            </Form>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     )
 }

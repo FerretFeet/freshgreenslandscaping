@@ -60,6 +60,7 @@
     min-height: fit-content;
     min-width: fit-content;
     font-size: 2rem;
+    z-index: 5;
 }
 
 @media screen and (min-width: 1200px) {
