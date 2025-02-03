@@ -1,5 +1,5 @@
 {
-  "name": "my-remix-app",
+  "name": "Fresh Greens Landscaping",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -14,9 +14,8 @@
 
   },
   "dependencies": {
-    "@netlify/edge-functions": "^2.3.1",
-    "@netlify/remix-edge-adapter": "^3.2.1",
-    "@netlify/remix-runtime": "^2.2.0",
+    "@netlify/functions": "^2.3.1",
+    "@netlify/remix-adapter": "^3.2.1",
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
